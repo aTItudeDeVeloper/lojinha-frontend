@@ -6,7 +6,7 @@ export const StepFinish = () => {
     const { name } = useCheckoutStore(state => state);
 
     const message = generateMessage();
-    const link = `https://wa.me//${5585988514090}?text=${encodeURI(message)}`;
+    const link = `https://wa.me//${5585987047677}?text=${encodeURI(message)}`;
 
     return (
         <div className="text-center flex flex-col gap-5">
