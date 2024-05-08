@@ -119,7 +119,7 @@ export const StepAdress = ({ setStep }: Props) => {
                             <FormItem>
                                 <FormLabel>Estado</FormLabel>
                                 <FormControl>
-                                    <Select defaultValues={field.value} onValueChange={field.onChange}>
+                                    <Select defaultValue={field.value} onValueChange={field.onChange}>
                                         <SelectTrigger>
                                             <SelectValue placeholder="Estado"/>
                                         </SelectTrigger>
