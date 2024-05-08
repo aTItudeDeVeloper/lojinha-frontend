@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress"
-import * as api from "@/api/products";
 import { getAllProducts } from "@/services/product";
 import { Product } from "@/types/product";
 import { ProductEmpty } from "./empty";
@@ -23,7 +22,7 @@ export const ProductsTab = () => {
         setProgress(55);
         const products = await getAllProducts();
         console.log(products);
-        setProgress(false);
+        setProgress(0);
         setProducts(products);
     }
 
