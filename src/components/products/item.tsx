@@ -25,7 +25,7 @@ export const ProductItem = ({ item }: Props) => {
         <div>
             <div className="rounded-md overflow-hidden">
                 <img 
-                    src={item.image} 
+                    src={item.image.url} 
                     alt={item.name}
                     className="w-full h-32 flex-col gap-2"
                 />

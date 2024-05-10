@@ -16,13 +16,13 @@ type Tab = {
 export const ProductsTab = () => {
 
     const [products, setProducts] = useState<Product[]>([]);
-    const [progress, setProgress] = React.useState(13)
+    const [progress, setProgress] = useState<any>(13)
 
     const getAllCategories = async () => {
         setProgress(55);
         const products = await getAllProducts();
         console.log(products);
-        setProgress(0);
+        setProgress(false);
         setProducts(products);
     }
 

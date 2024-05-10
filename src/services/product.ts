@@ -1,10 +1,11 @@
 import { Product } from "@/types/product";
-import { products } from "@/api/products"
+import { getProducts } from "@/api/products"
+// import { products } from "@/api/products"
 
 export const getAllProducts = async (): Promise<Product[]> => {
     return new Promise((resolve) => {
         return setTimeout(() => {
-            resolve(products);
+            resolve(getProducts());
         }, 2000);
     });
 }
